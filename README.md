@@ -6,15 +6,15 @@ A complete, responsive website for the StandWithUs UK Explore programme.
 
 * All eight existing activities and their original web links.
 * The eight supplied game cover images.
-* The supplied StandWithUs UK logo.
-* The new Explore programme logo, including an adapted header mark.
+* The supplied StandWithUs UK logo, with a transparent lower background for its UK lettering.
+* The Explore programme logo and adapted header mark, both displayed without white background boxes.
 * Search and working topic filters.
 * Layouts designed for desktop, tablet and mobile.
 * Plain HTML, CSS and JavaScript. No installation or external services required.
 
 ## Updating your existing GitHub Pages website
 
-1. Download `StandWithUs_Explore_Activity_Hub_v2.zip` and extract it.
+1. Download `StandWithUs_Explore_Activity_Hub_v3.zip` and extract it.
 2. Open your GitHub repository for the Explore Activity Hub.
 3. Select `Add file`, then `Upload files`.
 4. Upload `index.html`, `styles.css`, `script.js`, `README.md` and the **entire `assets` folder**. Keep them at the root of the repository. They must not be inside an extra folder.
@@ -24,7 +24,7 @@ A complete, responsive website for the StandWithUs UK Explore programme.
 
 **Suggested commit message:**
 
-`Update Explore hub with official game covers and Explore logo`
+`Remove white backgrounds from StandWithUs UK and Explore logos`
 
 The site address stays the same. If the repository is called `explorehub`, it will be:
 
@@ -38,7 +38,7 @@ In a local copy of your repository, copy in the extracted website files and run:
 
 ```bash
 git add .
-git commit -m "Update Explore hub with official game covers and Explore logo"
+git commit -m "Remove white backgrounds from StandWithUs UK and Explore logos"
 git push origin main
 ```
 
@@ -69,6 +69,12 @@ Use one or more of these `tags` values: `history`, `decisions`, `peace`, `classr
 * `styles.css`: colours, typography, card layouts and mobile styling.
 * `script.js`: activities, URLs, descriptions, search and filters.
 * `assets/`: all supplied covers and logos, plus the website favicon.
+
+## Logo transparency
+
+* `assets/standwithus_uk_transparent.png` is the header and footer version, with the lower white background removed while preserving the logo lettering.
+* The original `assets/standwithus_uk.png` is included as a backup.
+* `assets/explore_mark.png` and `assets/explore_logo_full.png` are transparent images. Their white CSS background boxes have been removed from the header and Explore section.
 
 ## Notes
 
