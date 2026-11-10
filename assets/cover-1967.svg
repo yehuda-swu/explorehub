@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img">
+<defs>
+ <linearGradient id="bg" x1=".05" y1=".05" x2=".95" y2="1"><stop stop-color="#082950"/><stop offset="1" stop-color="#0e759d"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffffff" stop-opacity=".19"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="white" stroke-opacity=".07" stroke-width="1"/></pattern>
+ <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="white" fill-opacity=".17"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="19" flood-color="#051529" flood-opacity=".45"/></filter>
+ 
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/>
+<rect width="900" height="600" fill="url(#grid)"/>
+<circle cx="745" cy="120" r="280" fill="url(#glow)"/>
+<path d="M42 44h50 M42 44v50 M858 505v50h-50" fill="none" stroke="white" stroke-width="3" stroke-opacity=".24"/>
+
+<circle cx="670" cy="275" r="235" fill="#1591ba" opacity=".25"/>
+<g opacity=".34" fill="none" stroke="#94d9ee" stroke-width="2">
+ <path d="M380 50C470 130 465 176 570 201S690 270 802 195"/>
+ <path d="M345 112C450 192 463 236 560 258S665 324 805 258"/>
+ <path d="M372 176C428 231 423 300 527 316S699 386 850 327"/>
+ <path d="M380 245C435 279 466 351 527 388S717 458 848 393"/>
+ <path d="M390 310C438 364 462 417 530 447S736 511 845 470"/>
+</g>
+<path d="M545 97l70 24 18 83 82 68-40 70 29 77-90 38-52 81-87-39-33-92-65-53 28-93-28-60 72-68z" fill="#05263b" stroke="#99e1f2" stroke-width="4" opacity=".84"/>
+<path d="M465 173l112 112-28 119 92 55" fill="none" stroke="#86e8ef" stroke-width="5" stroke-dasharray="12 12"/>
+<path d="m615 420-20-30 4 42z" fill="#8fe3ed"/>
+<circle cx="465" cy="173" r="13" fill="#ffdc93" stroke="#fff" stroke-width="4"/>
+<circle cx="549" cy="404" r="11" fill="#ffdc93" stroke="#fff" stroke-width="4"/>
+<circle cx="640" cy="459" r="11" fill="#ffdc93" stroke="#fff" stroke-width="4"/>
+<g transform="translate(105 125)"><text x="0" y="117" font-family="Arial,sans-serif" font-weight="800" font-size="177" letter-spacing="-12" fill="#d7f9fb">19</text><text x="0" y="277" font-family="Arial,sans-serif" font-weight="800" font-size="177" letter-spacing="-12" fill="#d7f9fb">67</text><rect y="303" width="248" height="5" fill="#8cdbf0"/><text y="345" fill="#a4dded" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">DECISION FILE</text></g>
+<g transform="translate(768 100)" fill="none" stroke="#c0f0f9" opacity=".8"><circle r="33" stroke-width="2"/><path d="M0-45V45M-45 0H45" stroke-width="2"/><path d="m0-20 12 20-12 20-12-20z" fill="#c0f0f9"/></g>
+
+</svg>

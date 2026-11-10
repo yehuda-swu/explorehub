@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img">
+<defs>
+ <linearGradient id="bg" x1=".05" y1=".05" x2=".95" y2="1"><stop stop-color="#1948a9"/><stop offset="1" stop-color="#532e9a"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffffff" stop-opacity=".19"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="white" stroke-opacity=".07" stroke-width="1"/></pattern>
+ <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="white" fill-opacity=".17"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="19" flood-color="#051529" flood-opacity=".45"/></filter>
+ 
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/>
+<rect width="900" height="600" fill="url(#grid)"/>
+<circle cx="745" cy="120" r="280" fill="url(#glow)"/>
+<path d="M42 44h50 M42 44v50 M858 505v50h-50" fill="none" stroke="white" stroke-width="3" stroke-opacity=".24"/>
+
+<circle cx="713" cy="110" r="180" fill="#ca81fa" opacity=".20"/>
+<circle cx="120" cy="480" r="170" fill="#41b4f4" opacity=".19"/>
+<g stroke="#c7d7fa" stroke-width="5" fill="none" opacity=".65"><path d="M91 125l24 23-24 23M743 372l24 23-24 23M698 64l16 16-16 16"/><circle cx="101" cy="383" r="17"/><path d="M784 255v32m-16-16h32"/></g>
+<rect x="210" y="116" width="495" height="384" rx="27" fill="#0b2d78" stroke="#bed8ff" stroke-width="10" filter="url(#shadow)"/>
+<rect x="227" y="131" width="461" height="344" rx="14" fill="#2a71d0"/>
+<circle cx="260" cy="160" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="260" cy="226" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="260" cy="292" r="24" fill="#153b77" fill-opacity="1" /><circle cx="260" cy="358" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="260" cy="424" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="326" cy="160" r="24" fill="#153b77" fill-opacity="1" /><circle cx="326" cy="226" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="326" cy="292" r="24" fill="#153b77" fill-opacity="1" /><circle cx="326" cy="358" r="24" fill="#153b77" fill-opacity="1" /><circle cx="326" cy="424" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="392" cy="160" r="24" fill="#153b77" fill-opacity="1" /><circle cx="392" cy="226" r="24" fill="#153b77" fill-opacity="1" /><circle cx="392" cy="292" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="392" cy="358" r="24" fill="#ffbd72" fill-opacity="1" /><circle cx="392" cy="424" r="24" fill="#153b77" fill-opacity="1" /><circle cx="458" cy="160" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="458" cy="226" r="24" fill="#153b77" fill-opacity="1" /><circle cx="458" cy="292" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="458" cy="358" r="24" fill="#ffbd72" fill-opacity="1" /><circle cx="458" cy="424" r="24" fill="#153b77" fill-opacity="1" /><circle cx="524" cy="160" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="524" cy="226" r="24" fill="#153b77" fill-opacity="1" /><circle cx="524" cy="292" r="24" fill="#153b77" fill-opacity="1" /><circle cx="524" cy="358" r="24" fill="#ffbd72" fill-opacity="1" /><circle cx="524" cy="424" r="24" fill="#153b77" fill-opacity="1" /><circle cx="590" cy="160" r="24" fill="#153b77" fill-opacity="1" /><circle cx="590" cy="226" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="590" cy="292" r="24" fill="#153b77" fill-opacity="1" /><circle cx="590" cy="358" r="24" fill="#ffbd72" fill-opacity="1" /><circle cx="590" cy="424" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="656" cy="160" r="24" fill="#153b77" fill-opacity="1" /><circle cx="656" cy="226" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="656" cy="292" r="24" fill="#68d9fa" fill-opacity="1" /><circle cx="656" cy="358" r="24" fill="#153b77" fill-opacity="1" /><circle cx="656" cy="424" r="24" fill="#68d9fa" fill-opacity="1" />
+<rect x="324" y="345" width="264" height="66" rx="33" fill="none" stroke="#ffdc91" stroke-width="5" opacity=".5"/>
+<path d="M210 503h496" stroke="#132c67" stroke-width="20" stroke-linecap="round"/>
+<path d="M128 99l17 30M787 452l-22 31M753 75l-13 28" stroke="#e4a4ee" stroke-width="6" stroke-linecap="round"/>
+
+</svg>

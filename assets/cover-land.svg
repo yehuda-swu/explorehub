@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img">
+<defs>
+ <linearGradient id="bg" x1=".05" y1=".05" x2=".95" y2="1"><stop stop-color="#266b86"/><stop offset="1" stop-color="#c0a06e"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffffff" stop-opacity=".19"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="white" stroke-opacity=".07" stroke-width="1"/></pattern>
+ <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="white" fill-opacity=".17"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="19" flood-color="#051529" flood-opacity=".45"/></filter>
+ 
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/>
+<rect width="900" height="600" fill="url(#grid)"/>
+<circle cx="745" cy="120" r="280" fill="url(#glow)"/>
+<path d="M42 44h50 M42 44v50 M858 505v50h-50" fill="none" stroke="white" stroke-width="3" stroke-opacity=".24"/>
+
+<circle cx="662" cy="180" r="135" fill="#ffdc9d" opacity=".58"/>
+<path d="M0 384Q190 287 330 372T620 330T900 351V600H0Z" fill="#f0c88e" opacity=".62"/>
+<path d="M0 449Q210 367 408 431T900 409V600H0Z" fill="#c29b72" opacity=".79"/>
+<path d="M0 508Q190 427 365 492T900 462V600H0Z" fill="#365f71" opacity=".84"/>
+<g transform="translate(420 105)" fill="none" stroke="#d7e4d0" stroke-width="2" opacity=".6"><path d="M0 50Q160-18 312 67T484 75"/><path d="M-21 99Q165 26 313 112T483 126"/><path d="M-32 142Q162 80 303 153T483 165"/><path d="M-41 186Q170 113 309 198T479 213"/></g>
+<path d="M240 485Q404 356 533 192" stroke="#123b52" stroke-width="12" fill="none" stroke-linecap="round"/>
+<g fill="#bce6bc" stroke="#d8f3ce" stroke-width="2"><path d="M332 405q-65-14-73-65 66-9 73 65z"/><path d="M371 361q-3-74-60-90-16 61 60 90z"/><path d="M411 320q-8-70 49-93 32 51-49 93z"/><path d="M459 266q-69-10-76-65 65-8 76 65z"/><path d="M502 219q-8-67 51-81 17 64-51 81z"/></g>
+<g transform="translate(94 120)" fill="#f2f9ee"><text y="0" font-family="Georgia,serif" font-size="110" font-weight="700">PEACE</text><text y="43" font-family="Arial,sans-serif" font-size="22" letter-spacing="6" font-weight="700">TERRITORY  /  TIME</text></g>
+
+</svg>

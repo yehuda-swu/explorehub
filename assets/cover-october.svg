@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img">
+<defs>
+ <linearGradient id="bg" x1=".05" y1=".05" x2=".95" y2="1"><stop stop-color="#292f35"/><stop offset="1" stop-color="#61513e"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffffff" stop-opacity=".19"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="white" stroke-opacity=".07" stroke-width="1"/></pattern>
+ <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="white" fill-opacity=".17"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="19" flood-color="#051529" flood-opacity=".45"/></filter>
+ 
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/>
+<rect width="900" height="600" fill="url(#grid)"/>
+<circle cx="745" cy="120" r="280" fill="url(#glow)"/>
+<path d="M42 44h50 M42 44v50 M858 505v50h-50" fill="none" stroke="white" stroke-width="3" stroke-opacity=".24"/>
+
+<path d="M0 80H900M0 250H900M0 440H900" stroke="#a18865" stroke-width="7" opacity=".20"/>
+<g transform="rotate(-10 410 300)" filter="url(#shadow)"><rect x="135" y="66" width="536" height="484" rx="9" fill="#bda575"/><rect x="158" y="105" width="491" height="420" rx="3" fill="#ded4b0"/><rect x="201" y="137" width="408" height="350" rx="3" fill="#e8dfc4" stroke="#8c825e" stroke-width="3"/>
+<path d="M230 223l92 20 79-61 85 80 97 19-40 120-140 55-135-80z" fill="#80938a" opacity=".5"/><path d="M290 380l110-115 95 51 52-65" fill="none" stroke="#a34838" stroke-width="7" stroke-dasharray="13 10"/><g fill="#a34838" stroke="#fff8df" stroke-width="3"><circle cx="290" cy="380" r="11"/><circle cx="400" cy="265" r="11"/><circle cx="495" cy="316" r="11"/></g><path d="M234 165h152M234 187h202" stroke="#6e766e" stroke-width="4" opacity=".55"/></g>
+<g transform="rotate(12 655 385)" filter="url(#shadow)"><rect x="560" y="343" width="248" height="138" rx="6" fill="#243f4a" stroke="#b3b9aa" stroke-width="3"/><text x="583" y="393" font-family="Arial,sans-serif" font-size="28" font-weight="900" letter-spacing="3" fill="#eee4d0">TOP SECRET</text><path d="M580 418h179M580 436h128" stroke="#81999b" stroke-width="4"/></g>
+<g transform="translate(745 135)"><circle r="75" fill="#6a4736" stroke="#d7af8a" stroke-width="4"/><circle r="58" fill="none" stroke="#d7af8a" stroke-width="4" stroke-dasharray="5 7"/><text y="-3" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="23" fill="#e9b795">1973</text><text y="23" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="14" letter-spacing="3" fill="#e9b795">OCTOBER</text></g>
+
+</svg>

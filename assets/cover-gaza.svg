@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img">
+<defs>
+ <linearGradient id="bg" x1=".05" y1=".05" x2=".95" y2="1"><stop stop-color="#081c31"/><stop offset="1" stop-color="#165d68"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffffff" stop-opacity=".19"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="white" stroke-opacity=".07" stroke-width="1"/></pattern>
+ <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="white" fill-opacity=".17"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="19" flood-color="#051529" flood-opacity=".45"/></filter>
+ 
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/>
+<rect width="900" height="600" fill="url(#grid)"/>
+<circle cx="745" cy="120" r="280" fill="url(#glow)"/>
+<path d="M42 44h50 M42 44v50 M858 505v50h-50" fill="none" stroke="white" stroke-width="3" stroke-opacity=".24"/>
+
+<g transform="translate(570 287)"><circle r="230" stroke="#80d8d5" stroke-opacity=".23" stroke-width="2" fill="#1c8a93" fill-opacity=".10"/><circle r="166" stroke="#80d8d5" stroke-opacity=".33" stroke-width="2" fill="none"/><circle r="105" stroke="#80d8d5" stroke-opacity=".42" stroke-width="2" fill="none"/><circle r="40" stroke="#80d8d5" stroke-opacity=".5" stroke-width="2" fill="none"/><path d="M-230 0H230M0-230V230" stroke="#80d8d5" stroke-opacity=".38" stroke-width="2"/><path d="M0 0l170-160a233 233 0 0 1 60 160z" fill="#57d3c5" opacity=".13"/><circle cx="90" cy="-83" r="12" fill="#ff9985" stroke="#fff" stroke-width="4"/><circle cx="-125" cy="80" r="10" fill="#ffd081" stroke="#fff" stroke-width="3"/></g>
+<path d="M300 44Q285 143 347 236T337 435L290 600H0V0h320z" fill="#35a6ab" opacity=".26"/>
+<path d="M321 0Q304 123 345 205T350 415L312 600" stroke="#b8ede5" stroke-width="6" stroke-opacity=".65" fill="none"/>
+<g transform="translate(75 130)"><rect width="232" height="86" rx="8" fill="#0f3647" stroke="#4b929a" stroke-width="2"/><text x="21" y="31" font-family="Arial,sans-serif" letter-spacing="3" font-size="14" fill="#88d7d1">SECURITY FEED</text><path d="M20 60h36l17-18 25 27 18-14 18 10 19-23 20 18h36" stroke="#86e6cd" stroke-width="4" fill="none"/></g>
+<g transform="translate(79 405)"><rect width="220" height="100" rx="8" fill="#0c3641" stroke="#4b929a" stroke-width="2"/><text x="18" y="28" font-family="Arial,sans-serif" letter-spacing="3" font-size="14" fill="#88d7d1">SITUATION ROOM</text><text x="18" y="75" font-family="Arial,sans-serif" font-weight="900" font-size="41" fill="#f0a398">LIVE</text><circle cx="174" cy="61" r="11" fill="#e28773"/></g>
+
+</svg>
