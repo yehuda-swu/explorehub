@@ -24,7 +24,7 @@ A complete, responsive website for the StandWithUs UK Explore programme.
 
 **Suggested commit message:**
 
-`Remove white backgrounds from StandWithUs UK and Explore logos`
+`Replace SWU UK logo with updated transparent version`
 
 The site address stays the same. If the repository is called `explorehub`, it will be:
 
@@ -38,7 +38,7 @@ In a local copy of your repository, copy in the extracted website files and run:
 
 ```bash
 git add .
-git commit -m "Remove white backgrounds from StandWithUs UK and Explore logos"
+git commit -m "Replace SWU UK logo with updated transparent version"
 git push origin main
 ```
 
