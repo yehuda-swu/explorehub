@@ -1,133 +1,196 @@
 /*
- * Explore activity directory
- * To add an activity, add a new object to the GAMES array below.
- * Categories: history, peace, classroom.
- * Each cover is an SVG in the assets folder; you may reuse an existing cover.
+ * StandWithUs UK Explore Activity Hub
+ *
+ * Add future activities by copying an object in the ACTIVITIES array.
+ * Available tags for category filters: history, decisions, peace, classroom.
+ * Each image lives inside the assets folder and can be changed independently.
  */
-const GAMES = [
-  {
-    title: 'The Price of Peace',
-    subtitle: 'Step inside the Camp David negotiations. Can you navigate the choices that shaped the peace treaty between Israel and Egypt?',
-    category: 'peace', categoryLabel: 'PEACE & DIPLOMACY',
-    type: 'Negotiation simulation', era: '1978 / 1979',
-    cover: 'assets/cover-peace.svg',
-    url: 'https://yehuda-swu.github.io/thepriceofpeace/'
-  },
-  {
-    title: 'Six Days of Decisions',
-    subtitle: 'Enter the decision room of 1967. Review the intelligence, choose a course of action and discover what happened.',
-    category: 'history', categoryLabel: 'HISTORY & DECISIONS',
-    type: 'Decision simulation', era: '1967',
-    cover: 'assets/cover-1967.svg',
-    url: 'https://yehuda-swu.github.io/6-day-war-game/'
-  },
-  {
-    title: '1948: Hold the Line',
-    subtitle: 'Command a simulated campaign during the War of Independence. Manage your resources and protect the fronts.',
-    category: 'history', categoryLabel: 'HISTORY & DECISIONS',
-    type: 'Strategy game', era: '1948',
-    cover: 'assets/cover-1948.svg',
-    url: 'https://yehuda-swu.github.io/1948holdtheline/'
-  },
+const ACTIVITIES = [
   {
     title: '61: Build the Coalition',
-    subtitle: 'Explore Israeli politics. Bring parties together, navigate competing priorities and try to reach 61 seats.',
-    category: 'classroom', categoryLabel: 'CLASSROOM & POLITICS',
-    type: 'Politics simulation', era: 'THE KNESSET',
-    cover: 'assets/cover-coalition.svg',
+    keywords: 'Israeli elections Knesset parties parliamentary coalition government Netanyahu politics seats',
+    description: 'Can you build a stable Israeli government? Negotiate with parties and reach 61 seats.',
+    image: 'assets/coalition.png',
+    imageAlt: '61 Build the Coalition game artwork',
+    category: 'POLITICS SIMULATION',
+    details: 'Politics · Strategy',
+    tags: ['classroom', 'decisions'],
     url: 'https://yehuda-swu.github.io/coalition-builder/'
   },
   {
     title: 'The Gaza Dilemma',
-    subtitle: 'Take a seat in Israel’s security cabinet. Consider difficult decisions during events from 2005 to 2023.',
-    category: 'history', categoryLabel: 'HISTORY & DECISIONS',
-    type: 'Leadership simulation', era: '2005 / 2023',
-    cover: 'assets/cover-gaza.svg',
+    keywords: 'Gaza withdrawal 2005 Hamas rockets security cabinet operations prime minister',
+    description: 'You are Israel’s Prime Minister. Consider the briefings and make the call.',
+    image: 'assets/gaza.png',
+    imageAlt: 'The Gaza Dilemma game artwork',
+    category: 'HISTORICAL SIMULATION',
+    details: 'History · Leadership',
+    tags: ['history', 'decisions'],
     url: 'https://yehuda-swu.github.io/gazadilemma/'
   },
   {
+    title: 'The Price of Peace',
+    keywords: 'Camp David 1978 1979 peace treaty Egypt Israel Anwar Sadat Menachem Begin Jimmy Carter',
+    description: 'Navigate five tough decisions in the negotiations between Israel and Egypt.',
+    image: 'assets/price_of_peace.png',
+    imageAlt: 'The Price of Peace game artwork',
+    category: 'PEACE & DIPLOMACY',
+    details: '1978 · Negotiation',
+    tags: ['peace', 'decisions'],
+    url: 'https://yehuda-swu.github.io/thepriceofpeace/'
+  },
+  {
+    title: 'Six Days of Decisions',
+    keywords: '1967 Six Day War Jerusalem Sinai Golan intelligence war room Israel',
+    description: 'Step into the war room during the 1967 Six Day War. Your choices shape the journey.',
+    image: 'assets/six_days.png',
+    imageAlt: 'Six Days of Decisions game artwork',
+    category: 'HISTORY SIMULATION',
+    details: '1967 · Decisions',
+    tags: ['history', 'decisions'],
+    url: 'https://yehuda-swu.github.io/6-day-war-game/'
+  },
+  {
+    title: '1948: Hold the Line',
+    keywords: 'war of independence 1947 1948 1949 Israel strategy survival military fronts',
+    description: 'Manage scarce resources across several fronts during the 1948 war.',
+    image: 'assets/hold_the_line.png',
+    imageAlt: '1948 Hold the Line game artwork',
+    category: 'STRATEGY GAME',
+    details: '1948 · Strategy',
+    tags: ['history', 'decisions'],
+    url: 'https://yehuda-swu.github.io/1948holdtheline/'
+  },
+  {
     title: 'The Land for Peace Question',
-    subtitle: 'Explore a timeline of territorial diplomacy. Make a prediction, discuss the choices and reveal the outcome.',
-    category: 'peace', categoryLabel: 'PEACE & DIPLOMACY',
-    type: 'Interactive timeline', era: '1974 / 2014',
-    cover: 'assets/cover-land.svg',
+    keywords: 'territory settlements negotiations diplomacy Sinai withdrawal peace proposals',
+    description: 'Examine territorial proposals, discuss the choices and reveal what happened.',
+    image: 'assets/land_for_peace.png',
+    imageAlt: 'The Land for Peace Question activity artwork',
+    category: 'HISTORY & DIPLOMACY',
+    details: 'Diplomacy · Timeline',
+    tags: ['history', 'peace'],
     url: 'https://yehuda-swu.github.io/landforpeace/'
   },
   {
     title: 'The October Decision',
-    subtitle: 'Take your place in the war office. Read intelligence briefings and confront the decisions of October 1973.',
-    category: 'history', categoryLabel: 'HISTORY & DECISIONS',
-    type: 'Historical simulation', era: '1973',
-    cover: 'assets/cover-october.svg',
+    keywords: '1973 Yom Kippur War October war intelligence military Egypt Syria',
+    description: 'Read the intelligence briefings and face difficult choices in October 1973.',
+    image: 'assets/october_decision.png',
+    imageAlt: 'The October Decision game artwork',
+    category: 'HISTORICAL SIMULATION',
+    details: '1973 · Decisions',
+    tags: ['history', 'decisions'],
     url: 'https://yehuda-swu.github.io/octoberdecision/'
   },
   {
-    title: 'Explore Connect Four',
-    subtitle: 'Two teams. One board. Reveal questions, think quickly and claim your squares to connect four and win.',
-    category: 'classroom', categoryLabel: 'CLASSROOM & POLITICS',
-    type: 'Classroom quiz game', era: 'TEAM CHALLENGE',
-    cover: 'assets/cover-connect.svg',
+    title: 'Connect Four',
+    keywords: 'quiz classroom game knowledge challenge teams questions board',
+    description: 'Two teams. One board. Answer questions and connect four squares to win.',
+    image: 'assets/connect_four.png',
+    imageAlt: 'Explore Connect Four game artwork',
+    category: 'CLASSROOM CHALLENGE',
+    details: 'Teams · Quiz',
+    tags: ['classroom'],
     url: 'https://yehuda-swu.github.io/explore_connect_four/'
   }
 ];
 
-const grid = document.getElementById('games-grid');
-const search = document.getElementById('search');
-const filters = Array.from(document.querySelectorAll('.filter-button'));
-const resultsLabel = document.getElementById('results-label');
-const empty = document.getElementById('empty-state');
-let currentFilter = 'all';
+const grid = document.querySelector('#activity-grid');
+const search = document.querySelector('#search-activities');
+const buttons = [...document.querySelectorAll('[data-filter]')];
+const resultsLabel = document.querySelector('#results-label');
+const empty = document.querySelector('#empty-state');
+let selectedFilter = 'all';
 
-function card(game, index) {
-  const el = document.createElement('article');
-  el.className = 'game-card';
-  el.style.setProperty('--card-index', index);
-  // All data is locally defined above and is edited by the page owner.
-  el.innerHTML = `
-    <a href="${game.url}" target="_blank" rel="noopener noreferrer" aria-label="Open ${game.title} in a new tab">
-      <div class="game-art"><img src="${game.cover}" alt="" loading="lazy"><span class="art-top-label">EXPLORE / ${String(index + 1).padStart(2, '0')}</span><span class="art-number">${game.era}</span></div>
-      <div class="game-body"><span class="game-category">${game.categoryLabel}</span><h3>${game.title}</h3><p class="game-description">${game.subtitle}</p><div class="game-bottom"><span class="game-type">${game.type}</span><span class="game-launch">Launch activity <span class="launch-icon" aria-hidden="true">↗</span></span></div></div>
-    </a>`;
-  return el;
+function createCard(item) {
+  const card = document.createElement('article');
+  card.className = 'activity-card';
+  const link = document.createElement('a');
+  link.href = item.url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.setAttribute('aria-label', `Launch ${item.title} in a new tab`);
+
+  const imageArea = document.createElement('div');
+  imageArea.className = 'card-image-area';
+  imageArea.style.setProperty('--cover-image', `url("${item.image}")`);
+  const image = document.createElement('img');
+  image.src = item.image;
+  image.alt = item.imageAlt;
+  image.loading = 'lazy';
+  image.decoding = 'async';
+  imageArea.append(image);
+
+  const body = document.createElement('div');
+  body.className = 'card-body';
+  const kicker = document.createElement('span');
+  kicker.className = 'card-kicker';
+  kicker.textContent = item.category;
+  const title = document.createElement('h3');
+  title.textContent = item.title;
+  const description = document.createElement('p');
+  description.textContent = item.description;
+  const bottom = document.createElement('div');
+  bottom.className = 'card-bottom';
+  const details = document.createElement('span');
+  details.className = 'card-details';
+  details.textContent = item.details;
+  const launch = document.createElement('span');
+  launch.className = 'card-button';
+  launch.innerHTML = '<span aria-hidden="true">▶</span> Launch activity <span aria-hidden="true">↗</span>';
+  bottom.append(details, launch);
+  body.append(kicker, title, description, bottom);
+  link.append(imageArea, body);
+  card.append(link);
+  return card;
 }
 
 function render() {
-  const term = search.value.trim().toLocaleLowerCase('en-GB');
-  const visible = GAMES.filter(game =>
-    (currentFilter === 'all' || game.category === currentFilter) &&
-    [game.title, game.subtitle, game.categoryLabel, game.type, game.era].join(' ').toLocaleLowerCase('en-GB').includes(term)
-  );
-  grid.replaceChildren(...visible.map(card));
-  empty.hidden = visible.length !== 0;
-  resultsLabel.textContent = visible.length === GAMES.length
-    ? `Showing all ${GAMES.length} activities`
-    : `Showing ${visible.length} of ${GAMES.length} activities`;
+  const query = search.value.trim().toLocaleLowerCase('en-GB');
+  const filtered = ACTIVITIES.filter(item => {
+    const matchesFilter = selectedFilter === 'all' || item.tags.includes(selectedFilter);
+    const searchText = [item.title, item.description, item.category, item.details, item.keywords || '', ...item.tags].join(' ').toLocaleLowerCase('en-GB');
+    return matchesFilter && searchText.includes(query);
+  });
+  grid.replaceChildren(...filtered.map(createCard));
+  empty.hidden = filtered.length > 0;
+  resultsLabel.textContent = filtered.length === ACTIVITIES.length
+    ? `Showing all ${ACTIVITIES.length} activities`
+    : `Showing ${filtered.length} of ${ACTIVITIES.length} activities`;
 }
 
-filters.forEach(button => button.addEventListener('click', () => {
-  currentFilter = button.dataset.filter;
-  filters.forEach(item => {
-    const active = item === button;
-    item.classList.toggle('is-active', active);
-    item.setAttribute('aria-pressed', String(active));
+function chooseFilter(value) {
+  selectedFilter = value;
+  buttons.forEach(button => {
+    const selected = button.dataset.filter === value;
+    button.classList.toggle('is-selected', selected);
+    button.setAttribute('aria-pressed', String(selected));
   });
   render();
-}));
+}
+
+buttons.forEach(button => button.addEventListener('click', () => chooseFilter(button.dataset.filter)));
 search.addEventListener('input', render);
-document.getElementById('reset-filters').addEventListener('click', () => {
+document.querySelector('#reset-filters').addEventListener('click', () => {
   search.value = '';
-  filters[0].click();
-  document.getElementById('activities').scrollIntoView({block: 'start', behavior: 'smooth'});
+  chooseFilter('all');
+  search.focus();
 });
 document.addEventListener('keydown', event => {
   if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
-    event.preventDefault(); search.focus();
+    event.preventDefault();
+    search.focus();
   }
   if (event.key === 'Escape' && document.activeElement === search) {
-    search.value = ''; render(); search.blur();
+    search.value = '';
+    render();
+    search.blur();
   }
 });
-document.querySelector('.filter-count').textContent = GAMES.length;
-document.getElementById('total-games').textContent = String(GAMES.length).padStart(2, '0');
-document.getElementById('current-year').textContent = new Date().getFullYear();
+
+document.querySelector('#hero-count').textContent = `${ACTIVITIES.length} experiences`;
+document.querySelector('#large-count').textContent = String(ACTIVITIES.length).padStart(2, '0');
+document.querySelector('#all-count').textContent = ACTIVITIES.length;
+document.querySelector('#year').textContent = new Date().getFullYear();
 render();

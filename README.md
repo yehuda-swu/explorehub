@@ -1,75 +1,77 @@
 # StandWithUs UK Explore Activity Hub
 
-A responsive landing page for the StandWithUs UK Explore interactive learning collection.
+A complete, responsive website for the StandWithUs UK Explore programme.
 
 ## What is included
 
-1. All eight supplied activity links.
-2. Search and category filters.
-3. Original visual artwork for each activity.
-4. Your supplied StandWithUs UK logo.
-5. Mobile, tablet and desktop layouts.
-6. A simple structure for adding future activities.
+* All eight existing activities and their original web links.
+* The eight supplied game cover images.
+* The supplied StandWithUs UK logo.
+* The new Explore programme logo, including an adapted header mark.
+* Search and working topic filters.
+* Layouts designed for desktop, tablet and mobile.
+* Plain HTML, CSS and JavaScript. No installation or external services required.
 
-There are no packages, installations or external services required. Everything is plain HTML, CSS and JavaScript. All images are included locally.
+## Updating your existing GitHub Pages website
 
-## Publish with GitHub Pages
+1. Download `StandWithUs_Explore_Activity_Hub_v2.zip` and extract it.
+2. Open your GitHub repository for the Explore Activity Hub.
+3. Select `Add file`, then `Upload files`.
+4. Upload `index.html`, `styles.css`, `script.js`, `README.md` and the **entire `assets` folder**. Keep them at the root of the repository. They must not be inside an extra folder.
+5. If GitHub asks about replacements, replace the older files with the new versions.
+6. Under **Commit changes**, use the commit message below.
+7. Commit directly to the `main` branch. Your existing GitHub Pages settings can remain unchanged.
 
-1. Create a new **public** GitHub repository. Suggested name: `explorehub`.
-2. Download and extract the ZIP file containing this website.
-3. In your new GitHub repository, choose **Add file**, then **Upload files**.
-4. Upload `index.html`, `styles.css`, `script.js`, `README.md` and the entire `assets` folder. The files must be in the **root** of the repository, not within another folder named `explorehub`.
-5. Choose **Commit changes**. Suggested commit message: `Add StandWithUs UK Explore activity hub`.
-6. Open **Settings**, then **Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select `main`, choose `/ (root)` and save.
-7. Your website will use a URL similar to `https://yehuda-swu.github.io/explorehub/` if you use the suggested repository name and your existing GitHub username.
+**Suggested commit message:**
 
-Do not upload the ZIP itself. Extract it and upload its contents.
+`Update Explore hub with official game covers and Explore logo`
 
-## Add another activity
+The site address stays the same. If the repository is called `explorehub`, it will be:
 
-Open `script.js` and find `const GAMES = [` near the top. Copy an existing game object, paste the copy as another entry in the array, and update the fields.
+`https://yehuda-swu.github.io/explorehub/`
 
-Example:
+You do **not** need to create a new repository. Do **not** upload the ZIP file itself. Extract it first and upload its contents.
+
+## Updating using Git on your computer
+
+In a local copy of your repository, copy in the extracted website files and run:
+
+```bash
+git add .
+git commit -m "Update Explore hub with official game covers and Explore logo"
+git push origin main
+```
+
+## Adding another activity
+
+Edit `script.js`. Add a new entry to the `ACTIVITIES` array. For example:
 
 ```javascript
 {
-  title: 'Example New Game',
-  subtitle: 'A short description students can understand.',
-  category: 'history',
-  categoryLabel: 'HISTORY & DECISIONS',
-  type: 'Decision simulation',
-  era: 'NEW ACTIVITY',
-  cover: 'assets/cover-1967.svg',
+  title: 'A New Explore Game',
+  description: 'A short description of the activity.',
+  image: 'assets/new_game.png',
+  imageAlt: 'A New Explore Game artwork',
+  category: 'CLASSROOM CHALLENGE',
+  details: 'Teams · Quiz',
+  tags: ['classroom'],
   url: 'https://example.github.io/newgame/'
 },
 ```
 
-Use one of these category values: `history`, `peace` or `classroom`. For the artwork, you can reuse any existing cover or upload a new `.svg`, `.png` or `.jpg` to the `assets` folder and change the `cover` path.
+Put the image in the `assets` folder. Accepted browser image formats include PNG, JPG, SVG and WebP. Match the filename exactly, including capitalisation. Every activity should have its own image.
 
-The total activity count updates automatically. Search and filtering will immediately include the new activity.
-
-## Update via Git commands
-
-After editing the files in a local copy of the repository:
-
-```bash
-git add .
-git commit -m "Update Explore activity hub"
-git push origin main
-```
+Use one or more of these `tags` values: `history`, `decisions`, `peace`, `classroom`. Search and filter results are updated automatically. The activity count also updates automatically.
 
 ## Files
 
-`index.html` contains the page structure and headings.
-
-`styles.css` contains the colours, layouts and responsive design.
-
-`script.js` contains the activity descriptions, links, search and filters.
-
-`assets/` contains the supplied logo, favicon and original SVG cover illustrations.
+* `index.html`: structure of the homepage and branding.
+* `styles.css`: colours, typography, card layouts and mobile styling.
+* `script.js`: activities, URLs, descriptions, search and filters.
+* `assets/`: all supplied covers and logos, plus the website favicon.
 
 ## Notes
 
-The hub links directly to your existing GitHub Pages activities. It does not copy or change the games themselves. Each activity opens in a new browser tab.
+This site links to your eight existing games. It does not change them. Activity links open in a separate tab. All supplied artwork is included locally, so nothing needs to load from a third party image host.
 
-© StandWithUs UK. The uploaded brand logo remains the organisation's asset.
+© StandWithUs UK.
