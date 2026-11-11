@@ -93,6 +93,17 @@ const ACTIVITIES = [
     details: 'Teams · Quiz',
     tags: ['classroom'],
     url: 'https://yehuda-swu.github.io/explore_connect_four/'
+  },
+  {
+    title: 'What’s the Secret?',
+    keywords: 'Israeli innovation inventions entrepreneurship resilience creativity start up technology science research Israeli society remarkable ideas five questions teamwork thought board presentation',
+    description: 'Discover what makes Israel a centre for innovation. Research five questions and share what you uncover.',
+    image: 'assets/whats_the_secret.png',
+    imageAlt: 'What’s the Secret? The Innovation Challenge activity artwork',
+    category: 'INNOVATION CHALLENGE',
+    details: 'Innovation · Group research',
+    tags: ['innovation', 'classroom'],
+    url: 'https://yehuda-swu.github.io/whats_the_secret/'
   }
 ];
 
