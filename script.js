@@ -95,6 +95,17 @@ const ACTIVITIES = [
     url: 'https://yehuda-swu.github.io/explore_connect_four/'
   },
   {
+    title: 'A Nation on the Brink',
+    keywords: 'Lebanon Israel northern border conflict security cabinet military strategy leadership difficult decisions history',
+    description: 'Explore the tensions on Israel’s northern border and the difficult decisions facing its leaders.',
+    image: 'assets/a_nation_on_the_brink.png',
+    imageAlt: 'A Nation on the Brink activity cover artwork',
+    category: 'HISTORICAL SIMULATION',
+    details: 'Lebanon · Leadership',
+    tags: ['history', 'decisions'],
+    url: 'https://yehuda-swu.github.io/lebanonbrink/'
+  },
+  {
     title: 'What’s the Secret?',
     keywords: 'Israeli innovation inventions entrepreneurship resilience creativity start up technology science research Israeli society remarkable ideas five questions teamwork thought board presentation',
     description: 'Discover what makes Israel a centre for innovation. Research five questions and share what you uncover.',
