@@ -4,7 +4,7 @@ A responsive GitHub Pages website linking to the ten Explore educational activit
 
 ## Latest update: version 6
 
-* Added **A Nation on the Brink**, a historical decision activity about Israel and Lebanon.
+* Added **Northern Front: The Security Cabinet**, a historical decision activity about Israel and Lebanon.
 * Included the supplied cover art at `assets/a_nation_on_the_brink.png`.
 * Added the exact activity URL `https://yehuda-swu.github.io/lebanonbrink/`.
 * Included the activity in **History** and **Decision simulations** filters.
@@ -26,7 +26,7 @@ A responsive GitHub Pages website linking to the ten Explore educational activit
 4. Upload the extracted `index.html`, `styles.css`, `script.js`, `README.md`, and **the entire contents of `assets/`** into the matching locations in the repository. The website files must stay at the repository root.
 5. Commit the changes to the existing `main` branch with this message:
 
-   `Add A Nation on the Brink activity to Explore hub`
+   `Add Northern Front activity to Explore hub`
 
 Do not upload the ZIP file itself to the repository. Extract it and upload the website files inside it. There is no need to create a new repository or change the GitHub Pages settings.
 
@@ -36,7 +36,7 @@ Copy the new files into your existing locally cloned Explore hub repository, the
 
 ```bash
 git add .
-git commit -m "Add A Nation on the Brink activity to Explore hub"
+git commit -m "Add Northern Front activity to Explore hub"
 git push origin main
 ```
 

@@ -2,7 +2,7 @@
  * StandWithUs UK Explore Activity Hub
  *
  * Add future activities by copying an object in the ACTIVITIES array.
- * Available tags for category filters: history, decisions, peace, classroom.
+ * Available tags for category filters: history, decisions, peace, classroom, innovation.
  * Each image lives inside the assets folder and can be changed independently.
  */
 const ACTIVITIES = [
@@ -115,6 +115,17 @@ const ACTIVITIES = [
     details: 'Innovation · Group research',
     tags: ['innovation', 'classroom'],
     url: 'https://yehuda-swu.github.io/whats_the_secret/'
+  },
+  {
+    title: 'Northern Front: The Security Cabinet',
+    keywords: 'Lebanon northern front security cabinet PLO Hezbollah Israel prime minister cabinet history decision simulation border conflict',
+    description: 'Lead Israel’s security cabinet as threats emerge from Lebanon across different historical chapters.',
+    image: 'assets/northern_front.png',
+    imageAlt: 'Northern Front: The Security Cabinet activity cover artwork',
+    category: 'HISTORICAL SIMULATION',
+    details: 'Northern border · Leadership',
+    tags: ['history', 'decisions'],
+    url: 'https://yehuda-swu.github.io/northernfront/'
   }
 ];
 
