@@ -120,7 +120,7 @@ const ACTIVITIES = [
     title: 'Northern Front: The Security Cabinet',
     keywords: 'Lebanon northern front security cabinet PLO Hezbollah Israel prime minister cabinet history decision simulation border conflict',
     description: 'Lead Israel’s security cabinet as threats emerge from Lebanon across different historical chapters.',
-    image: 'assets/northern_front.png',
+    image: 'assets/northernfront.png',
     imageAlt: 'Northern Front: The Security Cabinet activity cover artwork',
     category: 'HISTORICAL SIMULATION',
     details: 'Northern border · Leadership',

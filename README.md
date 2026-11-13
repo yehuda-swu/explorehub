@@ -26,7 +26,7 @@ A responsive GitHub Pages website linking to the ten Explore educational activit
 4. Upload the extracted `index.html`, `styles.css`, `script.js`, `README.md`, and **the entire contents of `assets/`** into the matching locations in the repository. The website files must stay at the repository root.
 5. Commit the changes to the existing `main` branch with this message:
 
-   `Add Northern Front activity to Explore hub`
+   `Fix Northern Front image and update Explore hub`
 
 Do not upload the ZIP file itself to the repository. Extract it and upload the website files inside it. There is no need to create a new repository or change the GitHub Pages settings.
 
@@ -36,7 +36,7 @@ Copy the new files into your existing locally cloned Explore hub repository, the
 
 ```bash
 git add .
-git commit -m "Add Northern Front activity to Explore hub"
+git commit -m "Fix Northern Front image and update Explore hub"
 git push origin main
 ```
 
